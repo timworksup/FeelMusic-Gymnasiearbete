@@ -1,0 +1,36 @@
+body {
+  background-image: url("BgImg.jpg"); /* Using a royalty free and free for commercial use image that does not require permission nor attribution */ /* Image by Wilfried Vowoto (https://unsplash.com/photos/9-VxSBJz6F8)*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.text {
+  color: white;
+}
+
+.Logo {
+  float: none;
+}
+
+.Margin {
+  margin-right: -12px;
+  list-style: none;
+}
+
+.own-area-test.container {
+  max-width: 1920px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.own-area-test {
+  overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  position: relative;
+}
+
+  .cover-area { display: block; }
