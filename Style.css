@@ -1,10 +1,20 @@
 body {
+}
+
+#bgimg
+{
   background-image: url("BgImg.jpg"); /* Using a royalty free and free for commercial use image that does not require permission nor attribution */ /* Image by Wilfried Vowoto (https://unsplash.com/photos/9-VxSBJz6F8)*/
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
   margin: 0;
+  width: 100vw;
+  height: 93vh; /* Got 93vh so that the scrolling doesn't show and so the image will fit the browser no matter if you zoom out or make the window smaller */
+}
+
+.navbar
+{
+  width: 100vw;
+  height: 7vh;
 }
 
 .text {
@@ -33,4 +43,4 @@ body {
   position: relative;
 }
 
-  .cover-area { display: block; }
+  /*.cover-area { display: block; }*/
