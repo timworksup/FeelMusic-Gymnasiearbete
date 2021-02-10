@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="Style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="LogoSmall.png" type="image/icon type">
 </head>
-<body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <!-- When resizing browser window to a certain point it will put everything from the navbar list into a menu that will be triggered with a button -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+<body>
+  <!-- navbar-expand-lg makes the navbar items be expanded and not in a menu that has to be triggered by a button -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="LogoSmall.png" alt="" width="20" height="40">
+      </a>
       <!-- This is the main websites name and it uses the bootstrap css link -->
       <a class="navbar-brand" href="#">FeelMusic</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-      <!-- The class active is used to highlight the page of the Navbar you are at -->
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Test</a></li>
-      </ul>
-      <!-- Added my own class called Margin that puts the space between words and list items closer together-->
-      <ul class="Margin nav navbar-nav navbar-right">
-      <!-- span classes is used to call for a specific component within the 3.4.1 bootstrap css library -->
-        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> About Us</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <!-- When resizing browser window to a certain point it will put everything from the navbar list into a menu that will be triggered with a button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- This is the button -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!-- The class active is used to highlight the page of the Navbar you are at -->
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <!-- span classes is used to call for a specific component within the bootstrap css library -->
+          <li class="nav-item d-flex">
 
 
+
+            <a class="nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 18">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+              </svg> Contact Us</a>
+
+            <a class="nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 18">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+              </svg> About Us</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
+
 </html>
