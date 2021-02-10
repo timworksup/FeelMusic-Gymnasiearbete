@@ -1,20 +1,19 @@
-body {
-}
+body {}
 
-#bgimg
-{
-  background-image: url("BgImg.jpg"); /* Using a royalty free and free for commercial use image that does not require permission nor attribution */ /* Image by Wilfried Vowoto (https://unsplash.com/photos/9-VxSBJz6F8)*/
+#bgimg {
+  background-image: url("BgImg.jpg");
+  /* Using a royalty free and free for commercial use image that does not require permission nor attribution */
+  /* Image by Wilfried Vowoto (https://unsplash.com/photos/9-VxSBJz6F8)*/
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   width: 100vw;
-  height: 93vh; /* Got 93vh so that the scrolling doesn't show and so the image will fit the browser no matter if you zoom out or make the window smaller */
+  height: 93vh;
+  /* Got 93vh so that the scrolling doesn't show and so the image will fit the browser no matter if you zoom out or make the window smaller */
 }
 
-.navbar
-{
+.navbar {
   width: 100vw;
-  height: 7vh;
 }
 
 .text {
@@ -30,17 +29,39 @@ body {
   list-style: none;
 }
 
-.own-area-test.container {
+.container {
+  width: 93vw;
+  max-width: 500px;
+}
+
+.container-full {
+  max-width: 1920px;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  text-align: left;
+}
+
+/*.own-area-test.container {
   max-width: 1920px;
   padding-right: 25px;
   padding-left: 25px;
-}
-
-.own-area-test {
+}*/
+/*.own-area-test {
   overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
   position: relative;
-}
-
-  /*.cover-area { display: block; }*/
+}*/
+/*.cover-area { display: block; }*/
